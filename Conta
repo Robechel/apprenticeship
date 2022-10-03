@@ -1,0 +1,29 @@
+num1 = int(input('Infome um numero: '))
+num2 = int(input('Infome outro numero: '))
+conta = int(0)
+print('''[ 1 ] Somar
+[ 2 ] Multiplicar
+[ 3 ] Maior
+[ 4 ] Informar novos numeros
+[ 5 ] Sair''')
+conta = int(input('Qual a sua opção? '))
+while conta != 5:
+    if conta == 1:
+        print(f'A Soma de {num1} e {num2} é de: {num1 + num2}')
+        conta = float(input('Qual a sua opção? '))
+    if conta == 2:
+        print(f'A Multiplicação de {num1} e {num2} é de: {num1 * num2}')
+        conta = float(input('Qual a sua opção? '))
+    if conta == 3:
+        if num1 > num2:
+            print(f'O numero {num1} é maior que {num2}')
+        else:
+            print(f'O numero {num2} é maior que {num1}')
+    conta = float(input('Qual a sua opção? '))
+    if conta == 4:
+        num1 = int(input('Infome um numero novo: '))
+        num2 = int(input('Infome outro numero novo: '))
+        conta = float(input('Qual a sua opção? '))
+    else:
+        print('Opção invalida')
+print('Fim')
